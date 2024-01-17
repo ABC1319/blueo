@@ -1,0 +1,1447 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/icon1.png">
+  <title>Blue|导航</title>
+  <meta name="description" content="Blue的自留地">
+  <meta name="keywords" content="Blue">
+  <link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">
+  <link rel="stylesheet" type="text/css" href="css/h.9c69ed6c.css">
+  <link rel="stylesheet" type="text/css" href="css/nekotora.99cf6f8c.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137340638-1"></script>
+  <script>
+    function a() {
+      dataLayer.push(arguments)
+    }
+    window.dataLayer = window.dataLayer || [], a("js", new Date), a("config", "UA-137340638-1");
+  </script>
+</head>
+
+<body>
+
+  <script>
+    (function () {
+      var a_idx = 0;
+      window.onclick = function (event) {
+        var a = new Array("❤富强❤", "❤民主❤", "❤文明❤", "❤和谐❤", "❤自由❤", "❤平等❤", "❤公正❤", "❤法治❤", "❤爱国❤",
+          "❤敬业❤", "❤诚信❤", "❤友善❤");
+
+        var heart = document.createElement("b"); //创建b元素
+        heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+
+        document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+        a_idx = (a_idx + 1) % a.length;
+        heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+
+        var f = 16, // 字体大小
+          x = event.clientX - f / 2, // 横坐标
+          y = event.clientY - f, // 纵坐标
+          c = randomColor(), // 随机颜色
+          a = 1, // 透明度
+          s = 1.2; // 放大缩小
+
+        var timer = setInterval(function () { //添加定时器
+          if (a <= 0) {
+            document.body.removeChild(heart);
+            clearInterval(timer);
+          } else {
+            heart.style.cssText = "font-size:16px;cursor: default;position: fixed;color:" +
+              c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+              s + ");";
+
+            y--;
+            a -= 0.016;
+            s += 0.002;
+          }
+        }, 15)
+
+      }
+      // 随机颜色
+      function randomColor() {
+
+        return "rgb(" + (~~(Math.random() * 255)) + "," + (~~(Math.random() * 255)) + "," + (~~(Math
+          .random() * 255)) + ")";
+
+      }
+    }());
+  </script>
+
+
+
+  <!--<p>此处为导航，暂且不且，用的时候去除注释即可</p>
+  <nav>
+    <a href="https://945km.github.io" target="_blank" class="active">首页</a> <a class="clip"></a>
+    <a href="https://www.sunguoqi.com/categories/" target="_blank">归档</a>
+    <a class="clip"></a> <a href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzI4MDg2ODkwOQ==&scene=110#wechat_redirect" target="_blank">文章</a>
+    <a class="clip"></a> <a href="https://www.sunguoqi.com/comments/" target="_blank">留言板</a>
+  </nav>
+-->
+
+
+  <body onContextMenu="alert('禁止查看源代码，您的行为已记录。'); return false"
+    NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+    <div class="background">
+      <canvas id="startrack"></canvas>
+      <div class="cover"></div>
+    </div>
+
+    <div class="main">
+      <div class="ch intro">
+        <div class="container">
+          <div class="hello">
+            <h1 id="slogan">思考中...</h1>
+            <!--随机文字信息在\js\page.3a0791a3.js中修改-->
+            <h2>
+              <div class="circle"> <span></span> <span></span>
+                <span></span>
+              </div>Blue
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="ch about">
+      <div class="container">
+        <h2 class="chtitle">Embrace a brand new beginning <span> </span></h2>
+        <div class="clear">
+          <div class="introduct">
+            <img class="avatar" src="https://drive.netupdown.com/f/xk2Fx/wx-tx.png">
+            <p>生命是一种缘，你刻意追求的东西也许终生得不到，而你不曾期遇的灿烂，反而会在你的淡泊从容中不期而至！</p>
+            <p>你好，这里是集多小站 ，.当你手中抓住一件东西不放时，你只能拥有这件东西，如果你肯放手，你就有机会选择别的。人的心若死执自己的观念，不肯放下，那么他的智慧也只能达到某种程度而已。</p>
+            <p>茫茫人海，期待着与你不期而遇。</p>
+            <div class="chatbox">
+              <div class="line loading"> <span></span>
+                <span></span> <span></span>
+              </div>
+            </div>
+          </div>
+          <ul class="skill clear">
+            <li>
+              <p>梦想实现</p>
+              <div class="progress">
+                <div style="width:50%;"></div>
+                <span>相距很远 努力实现</span>
+              </div>
+            </li>
+            <li>
+              <p>生活态度</p>
+              <div class="progress">
+                <div style="width:80%;"></div>
+                <span>颇为满意 小有不足</span>
+
+            <li>
+              <p>未来期望</p>
+              <div class="progress">
+                <div style="width:88%;"></div>
+                <span>实现理想 彼此幸福~</span>
+              </div>
+            </li>
+            <li>
+              <p>迷茫指数</p>
+              <div class="progress">
+                <div style="width:35%;"></div>
+                <span>时而清醒 时而迷茫</span>
+              </div>
+            </li>
+        </div>
+        </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+    <!-- <p>移动TVBOX和导航版块时，此注释上面的不用管</p> -->
+
+
+
+    <!--<p>此处为网站导航类，可用作分类推荐一些实用网站，前两行和所有导航版块最后的两个div配对，且每一个导航最后都应该有一个div和每个导航开始的div配对</p>-->
+    </p>
+    <div class="gate ch">
+      <div class="container links">
+
+        <h2 class="chtitle">阿里云盘工具集<span>阿里云盘相关软件及资源网站推荐</span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+
+          <a href="https://www.aliyundrive.com/s/hBorY4D2BLQ" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/05/YhFtg.png">
+              </div>
+              <div class="inner">
+                <h5>阿里云盘转存助手</h5>
+                <p>自动转存阿里云盘订阅内容</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.aliyundrive.com/s/P36rMjugt8u" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VEShL.jpg">
+              </div>
+              <div class="inner">
+                <h5>阿里云盘小白羊版V3修复版</h5>
+                <p>阿里云盘第三方PC客户端</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.aliyundrive.com/s/UP7NBsxYZc6" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/05/YzwlK.png">
+              </div>
+              <div class="inner">
+                <h5>蜗牛云盘PC版</h5>
+                <p>第三方PC客户端，支持windows、Mac、Linux</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.aliyundrive.com/s/SUFUXkLd2qW" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01JDQCi21Dc8EfbRwvF_!!6000000000236-73-tps-64-64.ico">
+              </div>
+              <div class="inner">
+                <h5>阿里云盘TV版合集</h5>
+                <p>阿里云盘TV版多种版本，软件同时适配安卓手机端</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://pages.aliyundrive.com/mobile-page/web/signup.html?code=d9cac56" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01JDQCi21Dc8EfbRwvF_!!6000000000236-73-tps-64-64.ico">
+              </div>
+              <div class="inner">
+                <h5>阿里云盘网盘达人</h5>
+                <p>报名参与享最高50TB容量、延期卡等福利</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://docs.qq.com/sheet/DRVhWRldyZHNIeW93" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/03/VlGRa.png">
+              </div>
+              <div class="inner">
+                <h5>945KM资源库</h5>
+                <p>日常收集的一些资源，包括软件、影视、书籍等</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.upyunso.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VE9rU.png">
+              </div>
+              <div class="inner">
+                <h5>UP云搜</h5>
+                <p>不限速·资源全·更新及时</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="http://a.gitcafe.net/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VEjGY.png">
+              </div>
+              <div class="inner">
+                <h5>小纸条</h5>
+                <p>开放纯粹的资源网站</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://yiso.fun/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/03/V9MGM.png">
+              </div>
+              <div class="inner">
+                <h5>易搜</h5>
+                <p>努力做最好用的云盘资源搜索引擎！</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.niceso.fun/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/03/VE3bM.jpg">
+              </div>
+              <div class="inner">
+                <h5>奈斯搜索</h5>
+                <p>做最好用的阿里云盘资源搜索引擎，深藏功与名！</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.panyoubbs.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.panyoubbs.com/favicon.ico">
+              </div>
+              <div class="inner">
+                <h5>盘友社区</h5>
+                <p>云盘资源尽在盘友社区</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://jike.info/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://jike.info/assets/images/touch/512.png">
+              </div>
+              <div class="inner">
+                <h5>JIKE</h5>
+                <p>分享各种资源信息</p>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="chtitle">Blue自留地<span>听听音乐看看电影</span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+
+
+          <a href="https://musictest.heyunfei.repl.co/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/15/fCckL.png">
+              </div>
+              <div class="inner">
+                <h5>听音乐</h5>
+                <p>个人自用免费听音乐网页版</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://videotest.heyunfei.repl.co/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/15/fCdpi.png">
+              </div>
+              <div class="inner">
+                <h5>VIP解析</h5>
+                <p>个人自用VIP解析网页版</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="chtitle">影视论坛<span>主要以一些稀缺、绝版影视资源为主</span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+          <a href="https://club.ccmnn.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://club.ccmnn.com/data/attachment/common/c8/fid_2_main2.png">
+              </div>
+              <div class="inner">
+                <h5>国配影迷</h5>
+                <p>经典影视配音收藏，大量国语配音稀缺影视内容</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.mmybt.com/?fromuid=491058" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.mmybt.com/uc_server/avatar.php?uid=1&size=middle">
+              </div>
+              <div class="inner">
+                <h5>慢慢游社区</h5>
+                <p>国语配音、怀旧国配电影社区，译制版交流家园</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.bluegq.com" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.bluegq.com/uc_server/avatar.php?uid=13&size=small">
+              </div>
+              <div class="inner">
+                <h5>blue高清公馆</h5>
+                <p>华语最全最高清影视论坛</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="http://www.ssdvd.net/index.html" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJZVv.jpg">
+              </div>
+              <div class="inner">
+                <h5>狮碟影视论坛</h5>
+                <p>DVD热力影迷 香港|台湾|绝版|怀旧电影|DVD原盘</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.yinfans.me/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.yinfans.me/wp-content/themes/Loos2/images/favicon.ico">
+              </div>
+              <div class="inner">
+                <h5>音范丝</h5>
+                <p>精选4K蓝光原盘下载</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--<p>软件论坛</p>-->
+        </p>
+
+        <h2 class="chtitle">综合软件论坛<span> 各类原创、破解软件及相关教程论坛</span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+          <a href="https://www.aliyundrive.com/s/brLTDJTrN9y" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJfka.png">
+              </div>
+              <div class="inner">
+                <h5>实用软件合集</h5>
+                <p>各类实用软件合集，持续更新中</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.52pojie.cn/portal.php" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://down.52pojie.cn/Logo/52pojie.jpg">
+              </div>
+              <div class="inner">
+                <h5>吾爱破解</h5>
+                <p>PC软件、安卓破解、病毒分析</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.chinapyg.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJpCM.png">
+              </div>
+              <div class="inner">
+                <h5>飘云阁</h5>
+                <p>安卓软件、iOS越狱、苹果破解、移动安全</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://bbs.125.la/?fromuid=683198" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJt2I.png">
+              </div>
+              <div class="inner">
+                <h5>精易论坛</h5>
+                <p>易语言程序设计学习交流技术论坛</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.ghxi.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJDbD.png">
+              </div>
+              <div class="inner">
+                <h5>果核剥壳</h5>
+                <p>互联网的净土</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.423down.com" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.423down.com/wp-content/themes/D7/img/favicon.ico">
+              </div>
+              <div class="inner">
+                <h5>423down</h5>
+                <p>和果核剥壳类似</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="http://www.sixyin.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.sixyin.com/wp-content/uploads/2020/07/1595643570-favicon.png">
+              </div>
+              <div class="inner">
+                <h5>六音软件</h5>
+                <p>各类实用软件</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://msdn.itellyou.cn/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://static.itellyou.cn/images/logo.png">
+              </div>
+              <div class="inner">
+                <h5>I tell you</h5>
+                <p>软件工具站，各种操作系统及系统软件</p>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://www.chongbuluo.com/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://www.chongbuluo.com/static/image/common/logo-light-icon.svg">
+              </div>
+              <div class="inner">
+                <h5>虫部落</h5>
+                <p>让搜索更简单，教你怎么搜索资源</p>
+              </div>
+            </div>
+          </a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+        <h2 class="chtitle">安卓及TV软件论坛<span> </span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+          <a href="https://pan.quark.cn/s/c0f458546da3" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJV6K.png">
+              </div>
+              <div class="inner">
+                <h5>电视软件合集</h5>
+                <p>直播、点播、网盘TV版等</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://docs.qq.com/doc/DRVNLSENvUllrekJx" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/03/VlCac.png">
+              </div>
+              <div class="inner">
+                <h5>分享码</h5>
+                <p>乐家市场、蚂蚁市场分享码</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://docs.qq.com/doc/DRXhVYWF0cEpwV2FF" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/04/V21vN.png">
+              </div>
+              <div class="inner">
+                <h5>智能电视玩法大全</h5>
+                <p>关于一些智能电视软件的下载及玩法</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.iapps.me/" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://static.iapkk.com/wp-content/uploads/2021/04/1619504128-7857a4e47ac2df6-192x192.png">
+              </div>
+              <div class="inner">
+                <h5>翻应用</h5>
+                <p>专注发现优质安卓应用</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.znds.com/?fromuid=2457239" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://webpic.dangbei.net/data/znds/logo_ft.png">
+              </div>
+              <div class="inner">
+                <h5>ZSDN智能电视网</h5>
+                <p>智能电视论坛</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.znds.com/?fromuid=2457239" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJSQl.png">
+              </div>
+              <div class="inner">
+                <h5>蚂蚁市场社区</h5>
+                <p>智能电视、网络机顶盒软件爱好者交流、分享平台</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="https://www.right.com.cn/forum/portal.php" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/02/VJ0Cg.jpg">
+              </div>
+              <div class="inner">
+                <h5>恩山无线论坛</h5>
+                <p>专业无线路由器、网络设备论坛、网络TV影视频论坛</p>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="chtitle">听·音乐<span> </span></h2>
+        <!--<p>span中的文字为纯白色</p>-->
+        </p>
+        <div class="clear col-3">
+
+          <a href="http://tools.liumingye.cn/music_old/?page=searchPage" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="http://tools.liumingye.cn/favicon.ico">
+              </div>
+              <div class="inner">
+                <h5>MyFreeMP3</h5>
+                <p>网页端音乐播放器，支持下载无损音乐</p>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="https://pan.quark.cn/s/7ae414fa1c0d" target="_blank">
+            <div class="item">
+              <div class="avatar">
+                <img src="https://i.imgtg.com/2023/03/04/VjVXx.png">
+              </div>
+              <div class="inner">
+                <h5>洛雪音乐播放器</h5>
+                <p>支持Mac、Windows、Linux及安卓端安装</p>
+              </div>
+            </div>
+          </a>
+
+
+        </div>
+
+      </div>
+    </div>
+
+
+    <!--<p>此处为点击复制类，可用于一些接口等的复制操作，如果需要修改接口版块和导航版块位置，直接剪切接口版块所有代码</p>-->
+    </p>
+    <div class="find ch">
+      <div class="container links">
+        <h2 class="chtitle">TVbox <span>接口（点击复制）</span></h2>
+        <div class="clear col-3">
+
+          <div class="item">
+            <div class="bg" style="background-color:#1ba050"></div>
+            <div class="inner copy-btn" id="tangsan" data-clipboard-text="https://hutool.ml/tang">
+              <span>唐三</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#1ba050"></div>
+            <div class="inner copy-btn" id="tangsan" data-clipboard-text="http://我不是.肥猫.love:63/接口禁止贩卖">
+              <span>肥猫</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#0ff9ca"></div>
+            <div class="inner copy-btn" id="tangsan"
+              data-clipboard-text="https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json">
+              <span>南风</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#c4e00f"></div>
+            <div class="inner copy-btn" id="junyu"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/FongMi/CatVodSpider/main/json/config.json">
+              <span>FongMI</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#1f3cfb"></div>
+            <div class="inner copy-btn" id="qiaoer" data-clipboard-text="http://pandown.pro/tvbox/tvbox.json">
+              <span>巧技</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#5d4106"></div>
+            <div class="inner copy-btn" id="xiaoya" data-clipboard-text="http://home.jundie.top:81/top98.json">
+              <span>俊于</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#28a9e0"></div>
+            <div class="inner copy-btn" id="yunxing" data-clipboard-text="http://饭太硬.ga/tv">
+              <span>饭太硬</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#d50cf0"></div>
+            <div class="inner copy-btn" id="yunxing"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json">
+              <span>霜辉月明 py</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#680fe4"></div>
+            <div class="inner copy-btn" id="cainisi" data-clipboard-text="https://tvbox.cainisi.cf">
+              <span>菜妮丝 XBPQ</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#f30b0b"></div>
+            <div class="inner copy-btn" id="feimao"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/js.json">
+              <span>drpy js收集</span>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="bg" style="background-color:#0ff9ca"></div>
+            <div class="inner copy-btn" id="shenqi" data-clipboard-text="https://神器每日推送.tk/pz.json">
+              <span>神器</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="find ch">
+      <div class="container links">
+        <h2 class="chtitle">TVbox（集多） <span>接口（点击复制）</span></h2>
+        <div class="clear col-3">
+
+          <div class="item">
+            <div class="bg" style="background-color:#5499C7"></div>
+            <div class="inner copy-btn" id="xiaoya"
+              data-clipboard-text="http://52bsj.vip:81/api/v3/file/get/172217/jjys.json?sign=2ItQtrL0BaXJQ8G9tHrLDKu9DHelzT7u7zCJ3f1v8jo%3D%3A0">
+              <span>集多</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#2ECC71"></div>
+            <div class="inner copy-btn" id="xiaoya" data-clipboard-text="https://yydsys.top/duo">
+              <span>应用多多</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#680fe4"></div>
+            <div class="inner copy-btn" id="feimao"
+              data-clipboard-text="https://agit.ai/guot54/ygbh/raw/branch/master/pro%e5%8e%9f.json">
+              <span>月光家庭</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#f30b0b"></div>
+            <div class="inner copy-btn" id="shenqi" data-clipboard-text="http://rihou.cc:88/荷城茶秀">
+              <span>荷城茶秀</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#d50cf0"></div>
+            <div class="inner copy-btn" id="yunxing"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/lm317379829/PyramidStore/pyramid/py.json">
+              <span>欧歌</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#28a9e0"></div>
+            <div class="inner copy-btn" id="yunxing" data-clipboard-text="http://fan.888484.xyz/tv">
+              <span>饭太硬</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#F7DC6F"></div>
+            <div class="inner copy-btn" id="yunxing" data-clipboard-text="http://xhww.fun:63/小米/DEMO.json">
+              <span>小米 小暴脾气</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#1ba050"></div>
+            <div class="inner copy-btn" id="tangsan"
+              data-clipboard-text="https://agit.ai/hellocupe/vue-element-admin/raw/branch/master/t.json">
+              <span>菜花 调试助手 </span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#c4e00f"></div>
+            <div class="inner copy-btn" id="junyu"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/0827.json">
+              <span>FongMI</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#1f3cfb"></div>
+            <div class="inner copy-btn" id="qiaoer" data-clipboard-text="http://pandown.pro/tvbox/tvbox.json">
+              <span>巧技</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#0ff9ca"></div>
+            <div class="inner copy-btn" id="cainisi" data-clipboard-text="https://tvbox.cainisi.cf">
+              <span>菜妮丝 XBPQ</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#2ECC71"></div>
+            <div class="inner copy-btn" id="xiaoya"
+              data-clipboard-text="https://ghproxy.com/raw.githubusercontent.com/gaotianliuyun/gao/master/0825.json">
+              <span>PG one</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#E74C3C"></div>
+            <div class="inner copy-btn" id="xiaoya" data-clipboard-text="http://我不是.肥猫.love:63/接口禁止贩卖">
+              <span>肥猫</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#7F8C8D"></div>
+            <div class="inner copy-btn" id="xiaoya"
+              data-clipboard-text="https://agit.ai/Yoursmile7/TVBox/raw/branch/master/XC.json">
+              <span>南风</span>
+            </div>
+          </div>
+          <div class="item">
+            <div class="bg" style="background-color:#5d4106"></div>
+            <div class="inner copy-btn" id="xiaoya" data-clipboard-text="https://weixine.net/ysc.json">
+              <span>运输车</span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="gate ch">
+      <div class="container links">
+        <h2 class="chtitle">集多推荐 <span>一些热门网站，好用的工具。</span></h2>
+        <div class="clear col-3">
+          <a href="https://91haoka.cn/91haoka_platform/#/minishop?share_id=526248&shop_name=%25E9%259B%2586%25E5%25A4%259A%25E4%25B9%258B%25E5%25AE%25B6"
+            target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/73ef5ac72a53ea8989ebf.png">
+              </div>
+              <div class="inner">
+                <h5>代理流量卡</h5>
+                <p>大流量电话卡小铺</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://wwy.lanzouj.com/iWqXf19xvogf" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/78a92c23be640c837ed96.jpg">
+              </div>
+              <div class="inner">
+                <h5>GK之家</h5>
+                <p>TV软件库（推）</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://docs.qq.com/sheet/DQkRDZnlia2hyeFR5" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/432a5c117f28fa2846585.jpg">
+              </div>
+              <div class="inner">
+                <h5>传说分享</h5>
+                <p>传说大佬系列教程</p>
+              </div>
+            </div>
+          </a>
+          <a href="http://lzoq.hk3.xyyun.publicvm.com" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/f09f24bee0d3a670a8d49.png">
+              </div>
+              <div class="inner">
+                <h5>刘公子直播源</h5>
+                <p>爱心整理TV直播源</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://tophub.today" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://file.ipadown.com/tophub/assets/images/logo.png"> </div>
+              <div class="inner">
+                <h5>今日热榜</h5>
+                <p>热点话题 焦点资讯</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://455.fun/?fromuid=30700" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/9633fba8cfb723238f28e.png"> </div>
+              <div class="inner">
+                <h5>黑料不打烊</h5>
+                <p>一手黑料 一手吃瓜</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://blog.szyyds.cn/fongmi.html" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/ystv.md.png">
+              </div>
+              <div class="inner">
+                <h5>FongMI影视</h5>
+                <p>FongMI影视下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://jk.jiduo.xyz/home/HTML/azg.html" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/0852b76b70cb0d3804023.png"> </div>
+              <div class="inner">
+                <h5>影视仓</h5>
+                <p>安卓哥影视仓下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://github.com/catvod/CatVodOpen/releases" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/937b6048b0104ce0c25ad.png">
+              </div>
+              <div class="inner">
+                <h5>猫影视</h5>
+                <p>猫大佬系列下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://bbs.binmt.cc" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/eabfe3401bdb58d6b9aa8.png">
+              </div>
+              <div class="inner">
+                <h5>MT论坛</h5>
+                <p>逆向交流社区</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://miaogongzi.lanzout.com/b01rgkhhe" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/645069e844e8a1d57e25f.png"> </div>
+              <div class="inner">
+                <h5>开源阅读</h5>
+                <p>测试版实时发布</p>
+              </div>
+            </div>
+          </a>
+          <a href="http://www.yckceo.com/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/69a56bcb0c6b5f1ef0e1d.png">
+              </div>
+              <div class="inner">
+                <h5>阅读源仓库</h5>
+                <p>阅读书源订阅源</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://legado.cn" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/ce31ef14e32a7b6ca357d.png">
+              </div>
+              <div class="inner">
+                <h5>阅读论坛</h5>
+                <p>阅读APP相关讨论</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://liber3.eth.limo/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/399c1c0d4032ba79ea4c3.png">
+              </div>
+              <div class="inner">
+                <h5>Liber3电子书</h5>
+                <p>正版书下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://haikuo.lanzouq.com/u/GoldRiver" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/821b8115e73eb04c815c7.jpg"> </div>
+              <div class="inner">
+                <h5>海阔视界</h5>
+                <p>小棉袄发布地址</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://szyyds.cn" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/fc7e88de598259816b68e.jpg"> </div>
+              <div class="inner">
+                <h5>小马网络</h5>
+                <p>友情链接</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.lige.fit/ua" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/jm.jpeg">
+              </div>
+              <div class="inner">
+                <h5>黎歌の主页</h5>
+                <p>接口解密下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://tvfan.xxooo.cf/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/WoGG.png">
+              </div>
+              <div class="inner">
+                <h5>玩偶哥哥</h5>
+                <p>阿里资源分享站</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://tonzhon.com" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/4a7ce0e301b21281d24f4.jpg">
+              </div>
+              <div class="inner">
+                <h5>钟铜音乐</h5>
+                <p>无损音乐下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://wallhaven.cc/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/84586e8b64abeb02ce5c1.png">
+              </div>
+              <div class="inner">
+                <h5>高清壁纸下载</h5>
+                <p>海量的高清壁纸</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.sssoou.com" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/7c013a0120f235389dd90.jpg">
+              </div>
+              <div class="inner">
+                <h5>sssoou</h5>
+                <p>Telegram中文搜索</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.upyunso.com" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/02366f6e5281e3e68f337.png">
+              </div>
+              <div class="inner">
+                <h5>UP 云搜</h5>
+                <p>最好的云盘资源</p>
+              </div>
+            </div>
+          </a>
+          <a href="http://24mail.chacuo.net" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/ed5241f9ba8eb057a291c.jpg">
+              </div>
+              <div class="inner">
+                <h5>24小时邮箱</h5>
+                <p>临时邮箱注册工具</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://yandex.com/images" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/dd7d4ad014f0c4eed210e.png">
+              </div>
+              <div class="inner">
+                <h5>Yandex搜图</h5>
+                <p>你懂得以图搜图</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://ciliso.day" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/375b6e73ef9907ed8daa9.png">
+              </div>
+              <div class="inner">
+                <h5>磁力搜</h5>
+                <p>神秘代码磁力</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://www.cuppaso.com/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://www.vpslow.net/static/img/logo.png">
+              </div>
+              <div class="inner">
+                <h5>咔帕搜索</h5>
+                <p>综合云盘资源</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://apkpure.com/cn" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/94f3ac951469e3d779f77.png">
+              </div>
+              <div class="inner">
+                <h5>APKpure</h5>
+                <p>安卓软件下载</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://ps.gitapp.cn" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://img.mailcn.link/file/d04a5633e8e0f2b2b126e.jpg">
+              </div>
+              <div class="inner">
+                <h5>PS网页版</h5>
+                <p>在线PS</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://xiaomark.com/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/td.png">
+              </div>
+              <div class="inner">
+                <h5>太短</h5>
+                <p>缩短链接~</p>
+              </div>
+            </div>
+          </a>
+          <a href="https://js.7fan.fun/" target="_blank">
+            <div class="item">
+              <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/tk.png"> </div>
+              <div class="inner">
+                <h5>太快</h5>
+                <p>GitHub 文件加速</p>
+              </div>
+            </div>
+            </a-->
+            <a href="http://qiqiv.cn/tvbox/" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/tnb.png">
+                </div>
+                <div class="inner">
+                  <h5>太能编</h5>
+                  <p>接口配置编辑解密</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.mpimg.cn" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://img.mailcn.link/file/cf4b63963968c53366084.jpg">
+                </div>
+                <div class="inner">
+                  <h5>惜染外链网盘</h5>
+                  <p>一个好用的外联网盘</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/fandangos/Kodi-HDR-Edition/releases" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://img.mailcn.link/file/a393f511901c31118815f.png">
+                </div>
+                <div class="inner">
+                  <h5>KODI</h5>
+                  <p>加强版开源地址</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://github.com/hjdhnx/dr_py" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/daoz.png">
+                </div>
+                <div class="inner">
+                  <h5>道长DRPY项目</h5>
+                  <p>道长数据源</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://tools.shangui.cc/" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://static.runoob.com/images/c-runoob-logo.ico"> </div>
+                <div class="inner">
+                  <h5>SG工具箱</h5>
+                  <p>常用编辑工具</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://jihulab.com" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img
+                    src="https://jihulab.com/assets/favicon-72a2cad5025aa931d6ea56c3201d1f18e68a8cd39788c7c80d5b2b82aa5143ef.png">
+                </div>
+                <div class="inner">
+                  <h5>极狐代码托管</h5>
+                  <p>稳定私用接口托管</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://sms-activate.org" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://img.mailcn.link/file/9cc237c51995ab27d0bc2.jpg"> </div>
+                <div class="inner">
+                  <h5>SMS-Activate</h5>
+                  <p>靠谱的接码平台</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://live.fanmingming.com" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://img.mailcn.link/file/49ce5f11d3fd00ad138ca.png">
+                </div>
+                <div class="inner">
+                  <h5>范明明</h5>
+                  <p>直播源分享项目</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://www.foodieguide.com/iptvsearch/" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/iptv.png">
+                </div>
+                <div class="inner">
+                  <h5>直播源搜索引擎</h5>
+                  <p>直播源搜索</p>
+                </div>
+              </div>
+            </a>
+            <a href="https://guihet.com/tvlistconvert.html" target="_blank">
+              <div class="item">
+                <div class="avatar"> <img src="https://s1.imagehub.cc/images/2023/07/01/zbzh.webp">
+                </div>
+                <div class="inner">
+                  <h5>直播源格式转换</h5>
+                  <p>直播源转换工具</p>
+                </div>
+              </div>
+            </a>
+        </div>
+
+
+        <!--底部波浪-->
+        <div id="hans-bolang"></div>
+        <script src="https://api.vvhan.com/api/bolang"></script>
+
+        <!--网站运行时间-->
+        <script>
+          function secondToDate(second) {
+            if (!second) {
+              return 0;
+            }
+            var time = new Array(0, 0, 0, 0, 0);
+            if (second >= 365 * 24 * 3600) {
+              time[0] = parseInt(second / (365 * 24 * 3600));
+              second %= 365 * 24 * 3600;
+            }
+            if (second >= 24 * 3600) {
+              time[1] = parseInt(second / (24 * 3600));
+              second %= 24 * 3600;
+            }
+            if (second >= 3600) {
+              time[2] = parseInt(second / 3600);
+              second %= 3600;
+            }
+            if (second >= 60) {
+              time[3] = parseInt(second / 60);
+              second %= 60;
+            }
+            if (second > 0) {
+              time[4] = second;
+            }
+            return time;
+          }</script>
+        <script type="text/javascript" language="javascript">
+          function setTime() {
+            var create_time = Math.round(new Date(Date.UTC(2023, 02, 02, 6, 6, 6)).getTime() / 1000);
+            var timestamp = Math.round((new Date().getTime() + 8 * 60 * 60 * 1000) / 1000);
+            currentTime = secondToDate((timestamp - create_time));
+            currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
+              + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
+              + '秒';
+            document.getElementById("htmer_time").innerHTML = currentTimeHtml;
+          } setInterval(setTime, 1000);</script>
+
+
+
+
+        <div class="footer ch">
+          <div class="container">
+            <h4>© 2023 Powered by Blue</h4>
+
+            <div class="footer ch">
+              <div class="container">
+                <h4>星辰大海,不负遇见 © Blue的自留地</h4>
+
+                <br>
+                <h4>本网站已经稳定运行：<span id="htmer_time" style="color: red;"></span>
+                </h4>
+
+
+
+              </div>
+            </div>
+          </div>
+          <!--随机文字信息在\js\page.3a0791a3.js中修改-->
+          <script src="js/page.3a0791a3.js"></script>
+          <script type="text/javascript" src="js/stats.js" charset="UTF-8"></script>
+
+          <audio autoplay>
+            <source src="https://api.uomg.com/api/rand.music?sort=热歌榜" type="audio/mpeg">
+          </audio>
+
+
+          <!--<p>上方复制弹出</p>-->
+          </p>
+          <!script src="js/page.3a0791a3.js">
+            </script>
+            <!--以下为点击复制调用js-->
+            <script src="js/jquery.min.js"></script>
+            <script src="js/clipboard.min.js"></script>
+            <script>
+              $('.copy-btn').click(function () {
+                let id = $(this).attr('id')
+                copy('#' + id)
+              })
+              function copy(id) {
+                let clipboard = new ClipboardJS(id);
+                clipboard.on('success', function (e) {
+                  console.log(e);
+                  alert('复制成功，请前往软件设置里粘贴接口')
+                  clipboard.destroy();//解决多次弹窗问题
+                });
+                clipboard.on('error', function (e) {
+                  console.log(e);
+                  alert('请重新复制')
+                  clipboard.destroy();//解决多次弹窗问题
+                });
+              }
+            </script>
+
+            <!--雪花API-->
+            <script src="https://api.vvhan.com/api/snow"></script>
+            <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+
+            <!-- 音乐代码 -->
+            <!script src="https://myhkw.cn/api/player/1671122654160" id="myhk" key="1671122654160" m="1">
+              </script>
+
+              <!--播放器-->
+              <!--播放器-->
+              <script id="myhk" src="https://myhkw.cn/api/player/1698460979130" key="1698460979130" m="1"></script>
+              <div id="myhk"></div>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/lunar-javascript/1.6.5/lunar.min.js"></script>
+
+              <!--看板娘-->
+              <link rel="stylesheet" href="https://npm.elemecdn.com/font-awesome@4.7.0/css/font-awesome.min.css">
+              <script src="https://npm.elemecdn.com/live2dnew@1.0.1/live2dnew/left/index.js"></script>
+              <style type="text/css">
+                #waifu #live2d {
+                  height: 330px !important;
+                  width: 330px !important;
+                }
+              </style>
+              <script>
+                localStorage.setItem('modelId', '20');
+                localStorage.setItem('modelTexturesId', '2');
+              </script>
+              <div id="chakra-toast-portal">
+                <ul id="chakra-toast-manager-top"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);">
+                </ul>
+                <ul id="chakra-toast-manager-top-left"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); left: env(safe-area-inset-left, 0px);">
+                </ul>
+                <ul id="chakra-toast-manager-top-right"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; top: env(safe-area-inset-top, 0px); right: env(safe-area-inset-right, 0px);">
+                </ul>
+                <ul id="chakra-toast-manager-bottom-left"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); left: env(safe-area-inset-left, 0px);">
+                </ul>
+                <ul id="chakra-toast-manager-bottom"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; margin: 0px auto; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px); left: env(safe-area-inset-left, 0px);">
+                </ul>
+                <ul id="chakra-toast-manager-bottom-right"
+                  style="position: fixed; z-index: 5500; pointer-events: none; display: flex; flex-direction: column; bottom: env(safe-area-inset-bottom, 0px); right: env(safe-area-inset-right, 0px);">
+                </ul>
+              </div>
+
+  </body>
+</body>
+
+</html>
